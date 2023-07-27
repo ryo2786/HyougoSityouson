@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap');
+
+/*----------------------------------------------------*/
+
+.App {
+  background-color: #282c34;
+}
+
+.App-Header{
+  background-color: #00000048;  
+  color: rgba(255, 255, 255, 0.877);
+  width: 100%;
+  height: 80px;
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+
+.App-Title{
+  width:100%;
+  
+  margin-top:1.5%; 
+  margin-bottom: 1.5%;
+}
+
+/*----------------------------------------------------*/
+
+.App-logo {
+  width: auto;
+  height: 1000px;
+
+  display: flex;
+  padding: 20px 10px;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+
+/*----------------------------------------------------*/
+
+.Button-List{
+  margin: 0px 20px;
+
+  display: inline-block;
+  text-align: center;
+}
+
+.button {
+  position: relative;
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+
+  background-color: #1c7468;
+  color: rgba(255, 255, 255, 0.877);
+
+  padding: 10px 10px;
+  margin: 3px;
+
+  border: none;
+  border-radius: 0.6rem;
+
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button span:not(:nth-child(6)) {
+  position: absolute;
+
+  background-color: #282c34;
+  
+  left: 50%;
+  top: 50%;
+  width: 30px;  
+  height: 30px;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+.button span:nth-child(6) {
+  position: relative;
+}
+
+.button span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.button span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.button span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+.button span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.button span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.button:disabled span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+.button:disabled{
+  color: #8c8e92;
+  
+  cursor:not-allowed;
+}
+
+/*----------------------------------------------------*/
